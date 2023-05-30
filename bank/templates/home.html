@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>homepage</title>
+{% endblock title %}
+
+{% block content %}
+<form action=''  method='POST'>
+{% csrf_token %}
+<input type='tel' placeholder='Enter account number' name='acname'>
+<input type='password' placeholder='Enter Password'>
+<input type='submit'>
+</form>
+{% endblock content %}

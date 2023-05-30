@@ -1,0 +1,16 @@
+body {
+	background-color:wheat;
+}
+
+footer {
+	background-color:grey;
+	position:relative;
+	top:35vmin;
+	width:100%;
+	height:15vmin;
+	
+}
+
+header {
+	background-color:crimson;
+}

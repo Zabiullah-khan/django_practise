@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+{% load static %}
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1'>
+{% block title %}
+<title> Home Page </title>
+{% endblock title %}
+
+{% block style %}
+<link rel='stylesheet' href='{% static "authstyle.css" %}'>
+{% endblock style%}
+
+</head>
+
+<body>
+<header>
+<section>
+{%  block header %}
+<div>
+THIS IS HEADER SECTION 
+<a href={% url "home" %}>Home</a>
+</div>
+{% endblock header %}
+</section>
+</header>
+
+<content>
+<section>
+{% block content %}
+<div>
+<a href='{% url "logfrm" %}'>Login Here </a>
+<<...If Dont Have An Account Signup Here...>>
+<a href='{% url "signfrm" %}'>Signup Here </a>
+</div>
+{% endblock content %}
+</section>
+</content>
+
+<footer>
+<section>
+{% block footer %}
+<div>
+THIS IS FOOTER SECTION 
+</div>
+{% endblock footer %}
+</section>
+</footer>
+
+</body>
+</html>
