@@ -1,0 +1,44 @@
+<! Doctype html>
+<html lang='en'>
+{% load static %}
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+{% block style %}
+
+{% endblock style %}
+
+{% block title %}
+<title>
+</title>
+{% endblock %}
+
+<body>
+
+{% block header %}
+<header>
+<section>
+<a href='{% url  "home" %}' > HOME </a>
+</section>
+</header>
+{% endblock header %}
+
+<content>
+{% block content %}
+
+<a href='#'>Login </a>
+<a href='{% url "signup" %}'>Signup </a>
+
+{% endblock content %}
+</content>
+
+{% block footer %}
+<footer>
+<section>
+THIS IS FOOTER SECTION
+</section>
+</footer>
+{% endblock footer %}
+</body>
+
+</html>
