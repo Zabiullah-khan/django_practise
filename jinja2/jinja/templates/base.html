@@ -1,0 +1,58 @@
+<! DOCTYPE html>
+<html lang='en'>
+{% load static %}
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+<title>{% block title %} codeshark text-utils {% endblock %}</title>
+<link rel='stylesheet' href={% static "static/style.css" %}>
+</head>
+<body>
+
+{% if stu %}
+
+<p>Show Data</p>
+
+<table>
+<tr>
+<th> Serial Number </th>
+<th> Student Name </th>
+<th> Student Mail</th>
+<th> Student Pass</th>
+<th> Student Comment</th>
+</tr>
+
+{% for i in stu%}
+<tr>
+<td>
+</p> {{i.serial_id}}<p>
+</td>
+
+<td>
+</p> {{i.stu_name}}<p>
+</td>
+
+<td>
+</p> {{i.stu_mail}}<p>
+</td>
+
+<td>
+</p> {{i.stu_pass}}<p>
+</td>
+
+<td>
+</p> {{i.comment}}<p>
+</td>
+
+</tr>
+{% endfor %}
+</table>
+{% else%}
+<p> No Data </p>
+{% endif %}
+<header>{% block header %} {% endblock header %}</header>
+{% block content %} {% endblock content %}
+
+<footer >{% block footer %} This is Footer {% endblock footer %}</footer>
+</body>
+</html>
