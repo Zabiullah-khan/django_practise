@@ -1,0 +1,67 @@
+<! Doctype html>
+<html lang='en'>
+{% load static %}
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel='stylesheet' href='{% static "vcardstyle.css" %}'>
+
+</head>
+
+<body>
+<header>
+
+<!-- logo  and name here -->
+<div class='logo_container'>
+<img src='{% static "logo.PNG" %}'   alt='logo' style='width:10rem;'>
+Code Shark 
+<span class='sur'>Technology</span>
+</div>
+</header>
+
+<content>
+
+<div class='ceo_conatiner'>
+<h3  >Muhammed Zabiullah Khan</h3>
+<div class="d-flex justify-content-start">
+<h5>CEO</h5> 
+ <hr class='under_line' id='linez'> </hr>
+ 
+</div>
+</div>
+
+</content>
+
+<footer>
+<div>
+<!-- contact details -->
+<ul  class="fa-ul">
+
+	<li ><i class="fa-thin fa fa-tag"></i> </i>+91 8778391194 </li>
+	<li ><i class="fa-thin fa fa-tag"></i> codezshark@gmail.com</li>
+	<li><i class="fa-thin fa fa-tag"></i> www.codezshark.com</li>
+	<li ><i class="fa-thin fa fa-tag"></i> https://127.0.0.1</li>
+</ul>
+</div>
+
+</footer>
+
+<div class='endtitle my-5 fixed-bottom' >
+
+<div class="d-flex flex-row bd-highlight mb-3">
+<div class="p-2 bd-highlight"><h3>Code Shark</h3></div>
+<div class="p-2 bd-highlight"><i class="fa-brands fa fa-facebook"></i></div>
+<div class="p-2 bd-highlight"><i class="fa-brands fa fa-twitter"></i> </div>
+<div class="p-2 bd-highlight"><i class="fa-brands fa  fa-github"></i> </div>
+</div>
+
+</div>
+
+<script src = "{% static 'vcard.js' %}">
+</script>
+</body>
+</html>
