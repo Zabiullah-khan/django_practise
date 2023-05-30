@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html lang='en'>
+{% load static %}
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+<title> Home </title>
+<link rel='stylesheet' href="{% static 'todoapp/static/todoappstyle.css'%}">
+</head>
+
+<body>
+<content>
+{% if data_fetch%}
+<form method='GET'>
+<table>
+<tr>
+<th> Date and Time</th>
+<th> To do list </th>
+</tr>
+{% for i in data_fetch%}
+<tr>
+<td> {{i.dtime}}</td>
+<td> {{i.summary}} </td> 
+<td> <button type='submit' value={{i.id}} name='vals'>Delete</button></td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<p>no data </p>
+</form>
+{% endif %}
+</content>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title> LoginPage</title>
+{% endblock title %}
+{% block content %}
+<form action='' method='POST' novalidate>
+{% csrf_token %}
+
+{% for forms in frm %}
+{{forms.label_tag}} {{forms}} {{forms.errors | striptags}}<br><br>
+{% endfor %}
+<input type='submit'>
+</form>
+{% endblock content %}

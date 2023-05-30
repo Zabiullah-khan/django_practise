@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+{% load static %}
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+{% block title %}
+<title>basepage</title>
+{% endblock title %}
+{% block style %}
+<link rel='stylesheet' href='#'>
+{% endblock style %}
+</head>
+<body>
+<header>
+<h1> Login Test </h1>
+</header>
+{% block content %}
+<div>
+<a href='{% url "login" %}'>Login </a>
+</div>
+{% endblock content %}
+<footer>
+<h3>This is Footer </h3>
+</footer>
+</body/>
+</html>

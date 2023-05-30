@@ -1,0 +1,16 @@
+<!Doctype html>
+{% load cache %}
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='device-width,initial-scale=1.0'>
+<title>homepagetempcookie</title>
+</head>
+<body>
+{% cache 20 cake %}
+<h3>cookie content 10</h3>
+{% endcache cake %}
+
+<h4>no cache 4</h4>
+</body>
+</html>
